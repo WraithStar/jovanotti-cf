@@ -5,8 +5,6 @@ namespace Jovanotti
 {
     public partial class Form1 : Form
     {
-        private bool m_bInitialifed = false;
-
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +20,6 @@ namespace Jovanotti
 
         private void textBoxInput_TextChanged(object sender, EventArgs e)
         {
-            if (!m_bInitialifed)
             textBoxOutput.Text = Tranflate(textBoxInput.Text);
         }
 
